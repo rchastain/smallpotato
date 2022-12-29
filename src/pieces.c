@@ -19,6 +19,17 @@
 #include "pieces.h"
 #include "board.h"
 
+int pieceMoves[NOTHING + 1][128][28];
+generateMoveFunction generateMoves[NOTHING + 1];
+generateMoveFunctionConstant generateCaptures[NOTHING + 1];
+int knightMoves[128][9];
+int rookMoves[128][15];
+int bishopMoves[128][14];
+int queenMoves[128][28];
+int wkingMoves[128][9];
+int bkingMoves[128][9];
+int wpawnMoves[128][5];
+int bpawnMoves[128][5];
 
 const int diagtopleft[64] = {
 	7, 8, 9, 10, 11, 12, 13, 14,
