@@ -19,3 +19,4 @@ website/optus.html
 *~
 *.a
 
+!archive/aclocal-1.13-is-missing.txt

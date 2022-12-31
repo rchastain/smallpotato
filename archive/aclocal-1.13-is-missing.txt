@@ -1,0 +1,16 @@
+WARNING: 'aclocal-1.13' is missing on your system. 
+  You should only need it if you modified 'acinclude.m4' or 'configure.ac' or m4 files included by 'configure.ac'. 
+  The 'aclocal' program is part of the GNU Automake package:  http://www.gnu.org/software/automake 
+  It also requires GNU Autoconf, GNU m4 and Perl in order to run: 
+     http://www.gnu.org/software/autoconf     
+     http://www.gnu.org/software/m4/ 
+     http://www.perl.org/ 
+make: *** [aclocal.m4] Error 127
+
+Install automake.
+sudo ln -s /usr/bin/aclocal /usr/bin/aclocal-1.13
+sudo ln -s /usr/bin/automake /usr/bin/automake-1.13
+
+sudo automake --add-missing
+
+https://stackoverflow.com/a/64565628
